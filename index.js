@@ -1,5 +1,9 @@
 var Promise = require('es6-promise').Promise;
-
+/*
+git remote add origin https://github.com/hollowdoor/polysolve.git
+git push -u origin master
+npm publish
+*/
 module.exports = run;
 
 function run(a){
@@ -61,7 +65,7 @@ function run(a){
                 });
             });
         }
-        
+
         return Promise.resolve(a);
     }
 }

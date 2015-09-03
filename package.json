@@ -1,6 +1,6 @@
 {
   "name": "polysolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resolve lots of promises",
   "main": "index.js",
   "directories": {
@@ -17,6 +17,7 @@
   "author": "Quentin Engles <hollowdoor99@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "es6-promise": "^3.0.2"
+    "es6-promise": "^3.0.2",
+    "setimmediate": "^1.0.2"
   }
 }

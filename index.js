@@ -1,3 +1,4 @@
+require('setimmediate');
 var Promise = require('es6-promise').Promise;
 /*
 git remote add origin https://github.com/hollowdoor/polysolve.git

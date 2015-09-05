@@ -34,6 +34,14 @@ ps('a primitive value').then(console.log);
 
 ps(curried()).then(console.log);
 
+//An array of streams will pipe in order.
+ps([
+    fs.createReadStream('source.js'),
+    fs.createWriteStream('dest.js')
+]).then(function(){
+    console.log('success!');
+}, console.log);
+
 function curried(word){
     word = word || 'curried';
     return function(cb){
@@ -52,6 +60,10 @@ Pass a value to `polysolve`. It returns the same value type with all of the prom
 For convenience `polysolve` delegates to Promise.all for arrays.
 
 `polysolve` turns primitive values into promises.
+
+An array of `streams` will be automatically piped. A promise is returned as usual.
+
+The streaming array is handled by the [streamall](https://www.npmjs.com/package/streamall) module.
 
 The example above includes the usage of Promise.resolve. Make sure to include your own **promise polyfill** if you need one.
 

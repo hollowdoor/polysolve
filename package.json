@@ -1,6 +1,6 @@
 {
   "name": "polysolve",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Resolve lots of promises",
   "main": "index.js",
   "directories": {
@@ -20,5 +20,9 @@
     "es6-promise": "^3.0.2",
     "setimmediate": "^1.0.2",
     "streamall": "^1.0.1"
-  }
+  },
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/hollowdoor/polysolve.git"
+    }
 }
